@@ -24,4 +24,15 @@ var tri = x.trim(); //removes unwanted starting or ending spaces
 var tril = x.trimLeft(); // removes unwanted starting spaces
 var trir = x.trimRight(); //removes unwanted ending spances
 
+//********************Hoisting***********************
+
+var p = 8; // Initialization
+
+element = document.getElementById("test"); 
+element.innerHTML = p + " " + q;  //q will be undefined because only declerations will be hoisted not initializations
+
+var q = 7; // Initialization
+
+// ***************************
+
 // More to Come!!
